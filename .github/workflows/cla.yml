@@ -1,0 +1,23 @@
+name: "CLA Check"
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  cla:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "CLA Assistant"
+        uses: contributor-assistant/github-action@v2
+        with:
+          path-to-signatures: "signatures/cla.json"
+          path-to-document: "https://example.com/cla"
+          branch: "cla-signatures"
+          allowlist: "dependabot[bot]"

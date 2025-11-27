@@ -1,0 +1,20 @@
+# Basic CLA configuration for contributor-assistant/github-action
+# See: https://github.com/contributor-assistant/github-action
+
+comment_body: >
+  Thank you for your contribution! Before we can review this PR, we need you to sign our Contributor License Agreement (CLA).
+
+  Please follow this link to review and sign the CLA:
+  https://example.com/cla
+
+  Once you've signed, please reply to this comment with "I have read the CLA Document and I hereby sign the CLA".
+
+label: "cla-required"
+
+signed_label: "cla-signed"
+
+# Users or bots that are exempt from the CLA check
+allowlist:
+  users: []
+  orgs: []
+  emails: []

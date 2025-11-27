@@ -1,5 +1,10 @@
 # ShieldCLI - Terminal-First Web Application Firewall
 
+[![CI](https://github.com/shieldcli/shieldcli/actions/workflows/ci.yml/badge.svg)](https://github.com/shieldcli/shieldcli/actions/workflows/ci.yml)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/shieldcli/shieldcli?style=for-the-badge&label=Go)](go.mod)
+[![License](https://img.shields.io/github/license/shieldcli/shieldcli?style=for-the-badge)](LICENSE)
+[![CLA](https://img.shields.io/badge/CLA-Required-blue?style=for-the-badge)](#contributor-license-agreement-cla)
+
 [![Architecture Diagram](https://img.shields.io/badge/Architecture-Diagram-blue?style=for-the-badge&logo=mermaid)](https://files.manuscdn.com/user_upload_by_module/session_file/310419663030496762/RLCcCukNJWvlpecY.png)
 
 ShieldCLI is a lightweight, terminal-first Web Application Firewall (WAF) that can be deployed on edge servers, developer machines, or containers to protect HTTP services in real time. It features real-time traffic interception, rule-based blocking with OWASP-style attack detection, and AI-powered threat analysis using Google's Gemini API.
@@ -335,6 +340,12 @@ ShieldCLI is designed for low-latency, high-throughput scenarios:
 ## Contributing
 
 Contributions are welcome! Please submit pull requests or issues on GitHub.
+
+### Contributor License Agreement (CLA)
+
+Before we can merge your pull request, you may be asked to sign a Contributor License Agreement (CLA). This helps protect both you and the project maintainers.
+
+You will receive an automated comment on your pull request with a link to the CLA and instructions on how to sign it.
 
 ## License
 
