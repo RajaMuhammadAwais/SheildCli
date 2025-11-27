@@ -1,11 +1,11 @@
 # ShieldCLI - Terminal-First Web Application Firewall
 
-[![CI](https://github.com/shieldcli/shieldcli/actions/workflows/ci.yml/badge.svg)](https://github.com/shieldcli/shieldcli/actions/workflows/ci.yml)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/shieldcli/shieldcli?style=for-the-badge&label=Go)](go.mod)
-[![License](https://img.shields.io/github/license/shieldcli/shieldcli?style=for-the-badge)](LICENSE)
+[![CI](https://github.com/RajaMuhammadAwais/SheildCli/actions/workflows/ci.yml/badge.svg)](https://github.com/RajaMuhammadAwais/SheildCli/actions/workflows/ci.yml)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/RajaMuhammadAwais/SheildCli?style=for-the-badge&label=Go)](go.mod)
+[![License](https://img.shields.io/github/license/RajaMuhammadAwais/SheildCli?style=for-the-badge)](LICENSE)
 [![CLA](https://img.shields.io/badge/CLA-Required-blue?style=for-the-badge)](#contributor-license-agreement-cla)
 
-[![Architecture Diagram](https://img.shields.io/badge/Architecture-Diagram-blue?style=for-the-badge&logo=mermaid)](https://files.manuscdn.com/user_upload_by_module/session_file/310419663030496762/RLCcCukNJWvlpecY.png)
+[![Architecture Diagram](https://img.shields.io/badge/Architecture-Diagram-blue?style=for-the-badge&logo=mermaid)](shieldcli_architecture.mmd)
 
 ShieldCLI is a lightweight, terminal-first Web Application Firewall (WAF) that can be deployed on edge servers, developer machines, or containers to protect HTTP services in real time. It features real-time traffic interception, rule-based blocking with OWASP-style attack detection, and AI-powered threat analysis using Google's Gemini API.
 
@@ -277,7 +277,7 @@ docker run -p 8080:8080 \
 kubectl apply -f shieldcli-deployment.yaml
 ```
 
-![ShieldCLI Architecture](https://files.manuscdn.com/user_upload_by_module/session_file/310419663030496762/RLCcCukNJWvlpecY.png)
+
 
 ## Architecture
 
