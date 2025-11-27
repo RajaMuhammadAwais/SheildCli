@@ -1,8 +1,8 @@
 # ShieldCLI - Terminal-First Web Application Firewall
 
-[![CI](https://github.com/shieldcli/shieldcli/actions/workflows/ci.yml/badge.svg)](https://github.com/shieldcli/shieldcli/actions/workflows/ci.yml)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/shieldcli/shieldcli?style=for-the-badge&label=Go)](go.mod)
-[![License](https://img.shields.io/github/license/shieldcli/shieldcli?style=for-the-badge)](LICENSE)
+[![CI](https://github.com/RajaMuhammadAwais/SheildCli/actions/workflows/ci.yml/badge.svg)](https://github.com/RajaMuhammadAwais/SheildCli/actions/workflows/ci.yml)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/RajaMuhammadAwais/SheildCli?style=for-the-badge&label=Go)](go.mod)
+[![License](https://img.shields.io/github/license/RajaMuhammadAwais/SheildCli?style=for-the-badge)](LICENSE)
 [![CLA](https://img.shields.io/badge/CLA-Required-blue?style=for-the-badge)](#contributor-license-agreement-cla)
 
 [![Architecture Diagram](https://img.shields.io/badge/Architecture-Diagram-blue?style=for-the-badge&logo=mermaid)](shieldcli_architecture.mmd)
