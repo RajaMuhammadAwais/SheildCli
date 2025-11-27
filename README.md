@@ -1,5 +1,7 @@
 # ShieldCLI - Terminal-First Web Application Firewall
 
+[![Architecture Diagram](https://img.shields.io/badge/Architecture-Diagram-blue?style=for-the-badge&logo=mermaid)](https://files.manuscdn.com/user_upload_by_module/session_file/310419663030496762/RLCcCukNJWvlpecY.png)
+
 ShieldCLI is a lightweight, terminal-first Web Application Firewall (WAF) that can be deployed on edge servers, developer machines, or containers to protect HTTP services in real time. It features real-time traffic interception, rule-based blocking with OWASP-style attack detection, and AI-powered threat analysis using Google's Gemini API.
 
 ## Features
@@ -269,6 +271,8 @@ docker run -p 8080:8080 \
 ```bash
 kubectl apply -f shieldcli-deployment.yaml
 ```
+
+![ShieldCLI Architecture](https://files.manuscdn.com/user_upload_by_module/session_file/310419663030496762/RLCcCukNJWvlpecY.png)
 
 ## Architecture
 
