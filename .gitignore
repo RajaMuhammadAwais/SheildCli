@@ -1,0 +1,45 @@
+# Binaries
+shieldcli
+test_server
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Test files
+*.test
+coverage.out
+*.prof
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+shieldcli.log
+test.log
+
+# Config
+shieldcli.yaml
+test.yaml
+
+# Traffic recordings
+traffic.json
+traffic.csv
+
+# Dependencies
+vendor/
+go.sum
