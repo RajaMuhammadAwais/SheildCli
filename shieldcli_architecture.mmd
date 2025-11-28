@@ -1,0 +1,11 @@
+graph TD
+    A[User/Attacker] --> B(Proxy Listener :8080)
+    B --> C{WAF Engine}
+    C -- Blocked --> D(403 Forbidden)
+    C -- Allowed --> E[Reverse Proxy]
+    E --> F[Application Server :3000]
+    F --> G[Response]
+    G --> B
+    C --> H[Anomaly Detector]
+    C --> I[Gemini AI API]
+    E --> J[Traffic Recorder]

@@ -1,5 +1,11 @@
 # ShieldCLI - Terminal-First Web Application Firewall
 
+<!-- Badges -->
+[![Go Version](https://img.shields.io/github/go-mod/go-version/RajaMuhammadAwais/SheildCli?style=for-the-badge&logo=go)](https://go.dev/)
+[![License](https://img.shields.io/github/license/RajaMuhammadAwais/SheildCli?style=for-the-badge)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/RajaMuhammadAwais/SheildCli?style=for-the-badge&color=yellow&logo=github)](https://github.com/RajaMuhammadAwais/SheildCli/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/RajaMuhammadAwais/SheildCli?style=for-the-badge&color=blue)](https://github.com/RajaMuhammadAwais/SheildCli/commits/main)
+
 ShieldCLI is a lightweight, terminal-first Web Application Firewall (WAF) that can be deployed on edge servers, developer machines, or containers to protect HTTP services in real time. It features real-time traffic interception, rule-based blocking with OWASP-style attack detection, and AI-powered threat analysis using Google's Gemini API.
 
 ## Features
@@ -214,11 +220,18 @@ ShieldCLI comes with 6 built-in security rules:
 
 ## Advanced Features
 
+### 🔬 Research & Analysis Features
+
+ShieldCLI includes advanced features for security researchers and threat intelligence analysts:
+
+- **Statistical Anomaly Detection**: Identify unusual traffic patterns (request rate, payload size, entropy) for proactive threat hunting.
+- **Traffic Recording & Replay**: Capture real-world traffic to a JSON file and replay it against a target for reproducible testing and WAF rule validation.
+
+For detailed usage of these features, see [RESEARCH_FEATURES.md](RESEARCH_FEATURES.md).
+
 ### Interactive Mode
 
 Pause and review suspicious requests before allowing them through:
-
-```bash
 ./shieldcli run --proxy-to http://localhost:3000 --port 8080 --interactive
 ```
 
@@ -272,7 +285,9 @@ kubectl apply -f shieldcli-deployment.yaml
 
 ## Architecture
 
-ShieldCLI is built with a modular architecture:
+ShieldCLI is built with a modular architecture, designed for performance and extensibility.
+
+![ShieldCLI Architecture Diagram](shieldcli_architecture.png)
 
 - **Proxy Engine**: Go's `net/http` for high-performance reverse proxying
 
