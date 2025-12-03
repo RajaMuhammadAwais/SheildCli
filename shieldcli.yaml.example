@@ -1,0 +1,60 @@
+# ShieldCLI Configuration File
+# This is an example configuration file for ShieldCLI
+
+# Proxy settings
+proxy:
+  # The port ShieldCLI listens on
+  listen_port: 8080
+  # The target application to forward traffic to
+  target_url: "http://localhost:3000"
+  # Timeout for forwarding requests (in seconds)
+  timeout: 30
+
+# WAF Engine Settings
+waf:
+  # Default action when a rule is triggered: 'block', 'log', 'pass'
+  default_action: "block"
+  # Enable/disable specific rules by ID
+  enabled_rules:
+    - 1001  # SQL Injection detection
+    - 1002  # XSS detection
+    - 1003  # Path Traversal
+    - 1004  # Command Injection
+    - 1005  # Suspicious User-Agent
+    - 1006  # High Entropy Payload
+
+# Logging and Reporting
+logging:
+  # Enable/disable terminal logging
+  terminal_enabled: true
+  # Log level for terminal output: 'debug', 'info', 'warn', 'error'
+  terminal_level: "info"
+  # File path for detailed logs
+  file_path: "./shieldcli.log"
+  # Format for log file: 'json', 'text'
+  file_format: "text"
+
+# Gemini AI Integration Settings
+gemini:
+  # API Key (can also be set via GEMINI_API_KEY env var)
+  # api_key: "YOUR_API_KEY"
+  # Model to use for threat analysis
+  model: "gemini-2.5-flash"
+  # Enable AI analysis for suspicious payloads
+  enabled: true
+  # Threshold for triggering AI analysis (0-10)
+  analysis_threshold: 5
+
+# Custom WAF Rules
+# Define custom rules in addition to the default ones
+custom_rules:
+  - id: 9001
+    name: "Block Specific IP"
+    description: "Block requests from a specific IP address"
+    phase: "request_headers"
+    operator: "equals"
+    pattern: "192.168.1.100"
+    target: "REMOTE_ADDR"
+    action: "block"
+    severity: "high"
+    enabled: false
